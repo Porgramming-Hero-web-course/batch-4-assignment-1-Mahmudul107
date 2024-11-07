@@ -18,7 +18,7 @@ Union types allow variables to hold multiple types, giving flexibility while mai
 ```typescript
 type MyType = string | number;
 
-Example: 
+### Example: 
 
 function printId(id: string | number): void {
   console.log(`ID: ${id}`);
@@ -33,12 +33,12 @@ Union types work well when a value might be of different types, such as handling
 Intersection Types
 Intersection types combine multiple types into one. A value of an intersection type must meet all the combined type requirements.
 
-Syntax
+### Syntax
 
 ```type MyType = A & B;```
 
 
-Example
+### Example
 ```typescript
 Copy code
 type Person = { name: string };
@@ -48,16 +48,16 @@ type Employee = Person & Worker;
 const employee: Employee = {
   name: "Mahmudul Islam",
   jobTitle: "Developer"
-};
+}; ```
 
 Intersection types are useful for creating composite types, such as combining properties of Person and Worker into Employee.
 
-Use Cases
+### Use Cases
 
-Union Types: For variables or parameters that can accept multiple types, e.g., string | number.
+#### Union Types: For variables or parameters that can accept multiple types, e.g., string | number.
 Intersection Types: For types requiring properties from multiple sources, e.g., Person & Worker.
 
-Summary
+## Summary
 
 Union Types (|) allow values to be one of several types.
 Intersection Types (&) combine multiple types into a single type, ensuring it meets all type requirements.
